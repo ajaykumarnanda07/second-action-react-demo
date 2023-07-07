@@ -4,9 +4,9 @@ jobs:
   test:
     runs-on: self-hosted
     steps:
-      - name: get code
+      - name: Get code
         uses: actions/checkout@v3
-      - name: install nodejs
+      - name: Install nodejs
         uses: actions/setup-node@v3
         with:
           node-version: 18
