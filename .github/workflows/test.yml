@@ -9,7 +9,7 @@ jobs:
       - name: Install nodejs
         uses: ./.github/actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 17
       - name: install dependencies
         uses: npm ci
       - name: run test
