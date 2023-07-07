@@ -4,13 +4,13 @@ jobs:
   test:
     runs-on: self-hosted
     steps:
-      -name: get code
-      -uses: actions/checkout@v3
-      -name: install nodejs
-      -uses: actions/setup-node@v3
-        with:
+      - name: get code
+       uses: actions/checkout@v3
+      - name: install nodejs
+       uses: actions/setup-node@v3
+       with:
         node-version: 18
-      -name: install dependencies
-      -uses: npm ci
-      -name: run test
+      - name: install dependencies
+        uses: npm ci
+      - name: run test
         run: npm test
